@@ -1,7 +1,7 @@
-#opx_smoketest
+# opx_smoketest
 This smoketest contains the basic check on PAS, NAS, and CPS.
  
-##Test cases for opx_smoketest
+## Test cases for opx_smoketest
 
 - Disable the logging on to syslog
 - Dump the management interface 
@@ -37,12 +37,12 @@ This smoketest contains the basic check on PAS, NAS, and CPS.
 ## How to run smoketest
 **1**. Download ansible in any server (see [Ansible Installation](http://docs.ansible.com/ansible/intro_installation.html)).
 
-**2**. Edit the inventory.yaml file with the details on the management IP, username, and password.
+**2**. Edit the `inventory.yaml` file with the details on the management IP, username, and password.
 
-**3**. Run the playbook with the command below where dut is the variable specified in inventory.yaml.
+**3**. Run the playbook with the command below where `dut` is the variable specified in `inventory.yaml`.
 
     ansible-playbook opx_smoketest.yaml -i inventory.yaml --extra-vars "dut=baseHW"
  
-See [opx-test](https://github.com/open-switch/opx-test/) for the yaml files.
+See [opx-test](https://github.com/open-switch/opx-test/) for the `yaml` files.
  
 (c) 2017 Dell
